@@ -11,8 +11,8 @@
 #   macOS native notifications and Calendar for monthly reporting.
 #
 # Usage:
-#   1. Make executable: chmod +x env_manager.sh
-#   2. Run manually: ./env_manager.sh
+#   1. Make executable: chmod +x env_maintenance.sh
+#   2. Run manually: ./env_maintenance.sh
 #   3. For automated monthly execution via launchd, please refer to the README.
 #
 # Note: 

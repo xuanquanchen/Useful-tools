@@ -30,8 +30,12 @@ if [ -d "$HOME/miniconda3/bin" ]; then export PATH="$HOME/miniconda3/bin:$PATH";
 if [ -d "$HOME/anaconda3/bin" ]; then export PATH="$HOME/anaconda3/bin:$PATH"; fi
 if [ -d "/opt/homebrew/Caskroom/miniforge/base/bin" ]; then export PATH="/opt/homebrew/Caskroom/miniforge/base/bin:$PATH"; fi
 
+# Ensure the log directory exists
+LOG_DIR=$(dirname "$LOG_FILE")
+mkdir -p "$LOG_DIR" || { echo "Failed to create log directory: $LOG_DIR" >&2; exit 1; }
+
 # Initialize the log file
-echo "=== Environment Maintenance Report ($DATE_STR) ===" > "$LOG_FILE"
+echo "=== Environment Maintenance Report ($DATE_STR) ===" > "$LOG_FILE" || { echo "Failed to write report: $LOG_FILE" >&2; exit 1; }
 echo "Scanning system for installed environments..." >> "$LOG_FILE"
 
 # ==========================================

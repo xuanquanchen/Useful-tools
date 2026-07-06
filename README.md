@@ -9,7 +9,7 @@ It natively integrates with **macOS Notifications** and your **macOS Calendar** 
 
 ### Automate it Monthly
 
-T schedule it to run silently in the background on the 1st of every month at 10:00 AM using macOS `launchd`.
+To schedule it to run silently in the background on the 1st of every month at 10:00 AM using macOS `launchd`.
 
 **1. Create a `launchd` Property List File:**
 

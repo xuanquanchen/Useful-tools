@@ -50,9 +50,9 @@ Paste the following XML into the editor.
     </dict>
 
     <key>StandardOutPath</key>
-    <string>/Users/YOUR_USERNAME/Library/Logs/env_manager.log</string>
+    <string>/Users/YOUR_USERNAME/Library/Logs/env_maintenance.log</string>
     <key>StandardErrorPath</key>
-    <string>/Users/YOUR_USERNAME/Library/Logs/env_manager.err</string>
+    <string>/Users/YOUR_USERNAME/Library/Logs/env_maintenance.err</string>
 </dict>
 </plist>
 ```

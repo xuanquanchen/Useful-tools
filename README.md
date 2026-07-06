@@ -35,7 +35,7 @@ Paste the following XML into the editor.
     
     <key>ProgramArguments</key>
     <array>
-        <string>/Users/YOUR_USERNAME/Documents/env_manager.sh</string>
+        <string>/Users/YOUR_USERNAME/Documents/env_maintenance.sh</string>
     </array>
     
     <!-- Run at 10:00 AM on the 1st day of every month -->

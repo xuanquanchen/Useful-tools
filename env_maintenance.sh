@@ -86,7 +86,12 @@ fi
 if command -v cargo &> /dev/null; then
     echo -e "\n[Cargo/Rust (Detected)]" >> "$LOG_FILE"
     echo "Cleaning Cargo cache and registry..." >> "$LOG_FILE"
-    rm -rf "$HOME/.cargo/registry/cache"/* &> /dev/null
+    CARGO_CACHE_DIR="$HOME/.cargo/registry/cache"
+    if [ -d "$CARGO_CACHE_DIR" ]; then
+        shopt -s nullglob
+        rm -rf -- "$CARGO_CACHE_DIR"/* &> /dev/null
+        shopt -u nullglob
+    fi
     echo "Cleanup complete." >> "$LOG_FILE"
 fi
 
